@@ -86,6 +86,7 @@
          } 
      }];
 
+    [self.subviews makeObjectsPerformSelector:@selector(setFd_collapsed:) withObject:@(collapsed)];
     objc_setAssociatedObject(self, @selector(fd_collapsed), @(collapsed), OBJC_ASSOCIATION_RETAIN);
 }
 
